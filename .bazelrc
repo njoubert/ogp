@@ -1,0 +1,25 @@
+# Build configuration for OGP
+
+# Use Clang as the C++ compiler
+# Set for both repository rules and build actions
+build --repo_env=CC=clang
+build --repo_env=CXX=clang++
+build --action_env=CC=clang
+build --action_env=CXX=clang++
+
+# Use C++17 standard
+build --cxxopt=-std=c++17
+build --host_cxxopt=-std=c++17
+
+# Enable compiler warnings
+build --cxxopt=-Wall
+build --cxxopt=-Wextra
+
+# Optimize for debugging by default
+build --compilation_mode=dbg
+
+# Use colors in terminal output
+build --color=yes
+
+# Show test output on failure
+test --test_output=errors

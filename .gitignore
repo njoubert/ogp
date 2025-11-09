@@ -1,0 +1,29 @@
+# Bazel build artifacts
+/bazel-*
+
+# C++ compiled objects
+*.o
+*.a
+*.so
+*.dylib
+
+# Executables
+*.exe
+*.out
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb

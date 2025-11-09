@@ -1,0 +1,6 @@
+cc_library(
+    name = "protocol",
+    srcs = ["protocol.cc"],
+    hdrs = ["protocol.h"],
+    visibility = ["//visibility:public"],
+)

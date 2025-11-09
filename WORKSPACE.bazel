@@ -1,0 +1,3 @@
+workspace(name = "ogp")
+
+# Define the workspace for the OGP network protocol project
